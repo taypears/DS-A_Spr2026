@@ -1,0 +1,120 @@
+//import java.util.*;
+/*
+ * IT-2660 - Lab 1
+ * Student Name: TayeJa Pearson
+ */
+
+// Add all of the methods here
+class Lab1 {
+  public int increment(int num) {
+    return ++num;
+  }
+
+  // 1. method for max int value
+  public int max(int a, int b) {
+    if (a > b) {
+      return a;
+    } else {
+      return b;
+    }
+  }
+
+  // 2. method for min int value
+  public int min(int a, int b) {
+    if (a < b) {
+      return a;
+    } else {
+      return b;
+    }
+  }
+
+  // 3. sum for all array values
+  public int arraySum(int[] nums) {
+    int sum = 0;
+    for (int i = 0; i < nums.length; i++) {
+      sum += nums[i];
+    }
+    return sum;
+  }
+
+  // 4. using a foreach loop to get array avg
+  public int arrayAvg(int[] nums) {
+    int sum = 0;
+    for (int num : nums) {
+      sum += num;
+    }
+    return sum / nums.length;
+  }
+
+  // 5. use a for loop for max array value
+  public int arrayMax(int[] nums) {
+    int max = nums[0];
+    for (int i = 1; i < nums.length; i++) {
+      if (nums[i] > max) {
+        max = nums[i];
+      }
+    }
+    return max;
+  }
+
+  // 6. use a for loop to get min array value
+  public int arrayMin(int[] nums) {
+    int min = nums[0];
+    for (int i = 1; i < nums.length; i++) {
+      if (nums[i] < min) {
+        min = nums[i];
+      }
+    }
+    return min;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("hello, world!");
+
+    Lab1 lab = new Lab1();
+    System.out.println(lab.increment(1));
+
+    // A. array values
+    int[] nums = { 5, 9, 3, 12, 7, 3, 11, 5 };
+
+    // B. order the array using a while statement
+    int i = 0;
+    while (i < nums.length - 1) { // first num
+      int j = 0;
+      while (j < nums.length - 1) { // second num
+        if (nums[j] > nums[j + 1]) {
+          int store = nums[j];
+          nums[j] = nums[j + 1];
+          nums[j + 1] = store;
+        }
+        j++;
+      }
+      i++;
+    }
+    System.out.println(java.util.Arrays.toString(nums));
+
+    // C. array order in reverse using for loop
+
+    for (int t = 0; t < nums.length / 2; t++) {
+      int store = nums[t];
+      nums[t] = nums[nums.length - 1 - t];
+      nums[nums.length - 1 - t] = store;
+    }
+    System.out.println(java.util.Arrays.toString(nums));
+
+    // D. print first and last array values
+    System.out.println("First array value: " + nums[0]);
+    System.out.println("Last array value: " + nums[nums.length - 1]);
+
+    // E. methods call from above Lab1
+    System.out.println("Out of 5 and 16, the maximum value is " + lab.max(16, 5));
+    System.out.println("Out of 5 and 16, the minimum value is " + lab.min(10, 5));
+    System.out.println("The sum of the array values is " + lab.arraySum(nums));
+    System.out.println("The average of the array values is " + lab.arrayAvg(nums));
+    System.out.println("The maximum value in the array is " + lab.arrayMax(nums));
+    System.out.println("The minimum value in the array is " + lab.arrayMin(nums));
+
+  }
+}
