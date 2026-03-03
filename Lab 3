@@ -2,7 +2,7 @@ public class Main {
   public static void main(String[] args) {
     String text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
-    String bestCase = ""; /****** */
+    String bestCase = "A";
 
     // * Initialize startTime here
     long startTime = System.nanoTime();
@@ -17,7 +17,7 @@ public class Main {
     else
       System.out.println("best-case input unmatched");
 
-    String worstCase = ""; /****** */
+    String worstCase = "!";
 
     // * Initialize startTime here
     long startTime1 = System.nanoTime();
