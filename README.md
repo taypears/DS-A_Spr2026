@@ -3,3 +3,4 @@ This repository contains all my lab projects for my Data Structures &amp; Algori
 
 Lab 1 - This file contains basic Java coding functions for arrays and basic integers <br/>
 Lab 2 - This file practices the use of Queues, Stacks, Iterations, Linked lists and the manipulation of the data within them.
+Lab 3 - This file uses Big O notation and utilizes best-case and worst-case scenario and also utilizes intializing start and end times.
