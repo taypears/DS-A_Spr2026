@@ -6,3 +6,4 @@ Lab 2 - This file practices the use of Queues, Stacks, Iterations, Linked lists 
 Lab 3 - This file uses Big O notation and utilizes best-case and worst-case scenario and also utilizes intializing start and end times.<br/>
 Lab 4 - This file practices the use of sorting array lists from an external file. <br/>
 Lab 5 - This file works with Binary Search Tree (BST) creation and modifications. <br/>
+Lab 6 - This file works with implemnting Hashing; inserting, deleting and modifying values in a HashMap. <br/>
