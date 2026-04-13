@@ -25,6 +25,6 @@
 
 **Step 6:** Print all of the values in the map.
 
-  **Step 7:** Remove IT-2030 and IT-1150.
+**Step 7:** Remove IT-2030 and IT-1150.
 
 **Step 8:** Print all of the values in the map.
