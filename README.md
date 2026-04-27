@@ -7,3 +7,4 @@ Lab 3 - This file uses Big O notation and utilizes best-case and worst-case scen
 Lab 4 - This file practices the use of sorting array lists from an external file. <br/>
 Lab 5 - This file works with Binary Search Tree (BST) creation and modifications. <br/>
 Lab 6 - This file works with implementing Hashing; inserting, deleting and modifying values in a HashMap. <br/>
+Lab 7 - This file applies an unweighted graph implementation to model the layout of the Tri‑C campus. <br/>
