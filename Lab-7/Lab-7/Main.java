@@ -14,14 +14,14 @@ class Main {
 
     // 2. Define Edges
     int[][] edges = {
-        { 0, 1 },
-        { 1, 6 },
-        { 6, 7 },
-        { 1, 5 },
-        { 1, 2 },
-        { 2, 3 },
-        { 2, 4 },
-        { 0, 7 }
+        { 0, 1 }, // Liberal Arts ↔ Student Services
+        { 0, 7 }, // Liberal Arts ↔ Theatre
+        { 1, 6 }, // Student Services ↔ Business & Technology
+        { 1, 5 }, // Student Services ↔ Technology Learning Center
+        { 1, 2 }, // Student Services ↔ Health Careers & Sciences
+        { 2, 3 }, // Health Careers ↔ Health Technologies
+        { 2, 4 }, // Health Careers ↔ Recreation Center
+        { 6, 7 } // Business & Technology ↔ Theatre
     };
 
     // 3. Create the graph (name "graph") using the vertices and edges
@@ -53,16 +53,12 @@ class Main {
 
     // 7. Call the printPath method (assuming this method exists in the
     // UnweightedGraph class)
-    // System.out.println("Path from Business & Technology to Health Technologies
-    // Center:");
     dfs.printPath(graph.getIndex("Health Technologies Center"));
     System.out.println();
 
-    // System.out.println("Path from Business & Technology to Student Services:");
     dfs.printPath(graph.getIndex("Student Services"));
     System.out.println();
 
-    // System.out.println("Path from Business & Technology to Recreation Center:");
     dfs.printPath(graph.getIndex("Recreation Center"));
     System.out.println();
 
