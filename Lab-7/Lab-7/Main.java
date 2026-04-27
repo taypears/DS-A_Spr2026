@@ -53,17 +53,17 @@ class Main {
 
     // 7. Call the printPath method (assuming this method exists in the
     // UnweightedGraph class)
-    System.out.println("Path from Business & Technology to Health Technologies Center:");
-    dfs.printPath(graph.getIndex("Health Technologies Center"));
-    System.out.println();
+      System.out.println("Path from Business & Technology to Health Technologies Center:");
+      dfs.printPath(graph.getIndex("Health Technologies Center"));
+      System.out.println();
 
-    System.out.println("Path from Business & Technology to Student Services:");
-    dfs.printPath(graph.getIndex("Student Services"));
-    System.out.println();
+      System.out.println("Path from Business & Technology to Student Services:");
+      dfs.printPath(graph.getIndex("Student Services"));
+      System.out.println();
 
-    System.out.println("Path from Business & Technology to Recreation Center:");
-    dfs.printPath(graph.getIndex("Recreation Center"));
-    System.out.println();
+      System.out.println("Path from Business & Technology to Recreation Center:");
+      dfs.printPath(graph.getIndex("Recreation Center"));
+      System.out.println();
 
     // 8. Call printTree() to print the entire DFS tree (assuming this method exists
     // in the UnweightedGraph class)
