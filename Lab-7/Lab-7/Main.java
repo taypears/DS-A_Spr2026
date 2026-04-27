@@ -14,14 +14,14 @@ class Main {
 
     // 2. Define Edges
     int[][] edges = {
-        { 0, 1 }, // Liberal Arts ↔ Student Services
-        { 0, 7 }, // Liberal Arts ↔ Theatre
-        { 1, 6 }, // Student Services ↔ Business & Technology
-        { 1, 5 }, // Student Services ↔ Technology Learning Center
-        { 1, 2 }, // Student Services ↔ Health Careers & Sciences
-        { 2, 3 }, // Health Careers ↔ Health Technologies
-        { 2, 4 }, // Health Careers ↔ Recreation Center
-        { 6, 7 } // Business & Technology ↔ Theatre
+        { 0, 1 }, { 1, 0 }, // Liberal Arts ↔ Student Services
+        { 0, 7 }, { 7, 0 }, // Liberal Arts ↔ Theatre
+        { 1, 6 }, { 6, 1 }, // Student Services ↔ Business & Technology
+        { 1, 5 }, { 5, 1 }, // Student Services ↔ Technology Learning Center
+        { 1, 2 }, { 2, 1 }, // Student Services ↔ Health Careers & Sciences
+        { 2, 3 }, { 3, 2 }, // Health Careers ↔ Health Technologies
+        { 2, 4 }, { 4, 2 }, // Health Careers ↔ Recreation Center
+        { 6, 7 }, { 7, 6 } // Business & Technology ↔ Theatre
     };
 
     // 3. Create the graph (name "graph") using the vertices and edges
