@@ -41,12 +41,11 @@ class Main {
     // 6. Print the parent-child relationships for each vertex during the DFS traversal
       System.out.println("Parent-child relationships in the DFS tree:");
         for (int i = 0; i < searchOrder.size(); i++) {
-            int v = searchOrder.get(i);      // actual vertex visited
+            int v = searchOrder.get(i);      // vertex visited
             int parent = dfs.getParent(v);   // parent of that vertex
 
             if (parent != -1) {
-                System.out.println("parent of " + graph.getVertex(v) +
-                                  " is " + graph.getVertex(parent));
+                System.out.println("parent of " + graph.getVertex(v) + " is " + graph.getVertex(parent));
             }
         }
 
